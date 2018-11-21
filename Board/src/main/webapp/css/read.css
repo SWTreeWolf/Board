@@ -1,0 +1,31 @@
+section>.table {
+	margin: 0 auto;
+	width: 80%;
+}
+
+section>.table>thead>tr>th:nth-of-type(2) {
+	width: 65%;
+}
+
+section>.table>thead>tr>th {
+	width: 10%;
+}
+
+section>.contents {
+	margin: 20px auto;
+	width: 80%;
+}
+
+section>.BtnContainer {
+	margin: 0 auto;
+	width: 80%;
+	text-align: right;
+}
+
+section>#modifiedForm>.BtnContainer>button {
+	float: right;
+}
+
+section>#modifiedForm>.BtnContainer>#modifiedBtn {
+	margin: 0px 10px;
+}

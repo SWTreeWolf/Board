@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>
+	<definition name="index"
+		template="/WEB-INF/view/template/layout.jsp">
+		<put-attribute name="resetCss" value="css/reset.css" />
+		<put-attribute name="changeCss" value="css/list.css" />
+		<put-attribute name="changeJS" value="js/list.js"/>
+		<put-attribute name="nav" value="/WEB-INF/view/template/nav.jsp" />
+		<put-attribute name="body" value="/WEB-INF/view/list.jsp" />
+	</definition>
+	
+	<definition name="create" extends="index">
+		<put-attribute name="changeCss" value="css/create.css" />
+		<put-attribute name="changeJS" value="js/create.js"/>
+		<put-attribute name="body" value="/WEB-INF/view/create.jsp" />
+	</definition>
+	
+	<definition name="read" extends="index">
+		<put-attribute name="changeCss" value="css/read.css" />
+		<put-attribute name="changeJS" value="js/read.js"/>
+		<put-attribute name="body" value="/WEB-INF/view/read.jsp" />
+	</definition>
+	
+	<definition name="modified" extends="index">
+		<put-attribute name="changeCss" value="css/create.css" />
+		<put-attribute name="changeJS" value="js/create.js"/>
+		<put-attribute name="body" value="/WEB-INF/view/modified.jsp" />
+	</definition>
+</tiles-definitions>
+

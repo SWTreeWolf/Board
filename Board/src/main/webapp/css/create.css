@@ -1,0 +1,9 @@
+section>.titlecontainer, section>.contentcontainer, section>.contentcontainer>.btnContainer
+	{
+	margin: 0 auto 30px;
+	width: 80%;
+}
+
+section>.contentcontainer>.btnContainer {
+	text-align: center;
+}
